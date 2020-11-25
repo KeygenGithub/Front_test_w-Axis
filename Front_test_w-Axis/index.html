@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>w-Axis_front_test</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1>Cassa</h1>
+    </header>
+    <div class="products">
+        <img src="img/line.png" alt="line" class="line">
+        <div class="product-card" id="productCard1">
+            <h2>Pineapple</h2>
+            <img src="img/pineapple.png" alt="pineapple bottle" class="product-img">
+            <p class="description">Offerta limitata -50%</p>
+            <p class="price"><span class="new-price">$8.50</span><span class="old-price">19.00$</span></p>
+            <div class="dropdown-list" onclick="showOptions(1)">
+                <span class="choice" id="choice1">3</span>
+                <img src="img/arrow.png" alt="arrow" class="arrow">
+                <ul class="dropdown" id="dropdown1">
+                    <li id="option"></li>
+                </ul>
+            </div>
+            <a href="#" class="cart"></a>
+        </div>
+        <div class="product-card not-show-mobile" id="productCard2">
+            <h2>Berries</h2>
+            <img src="img/berries.png" alt="berries bottle" class="product-img">
+            <p class="description">Offerta limitata -50%</p>
+            <p class="price"><span class="new-price">$8.50</span><span class="old-price">19.00$</span></p>
+            <div class="dropdown-list" onclick="showOptions(2)">
+                <span class="choice" id="choice2">3</span>
+                <img src="img/arrow.png" alt="arrow" class="arrow">
+                <ul class="dropdown" id="dropdown2">
+                    <li id="option"></li>
+                </ul>
+            </div>
+            <a href="#" class="cart"></a>
+        </div>
+        <div class="product-card not-show-mobile" id="productCard3">
+            <h2>Grapefruit</h2>
+            <img src="img/grapefruit.png" alt="grapefruit bottle" class="product-img">
+            <p class="description">Offerta limitata -50%</p>
+            <p class="price"><span class="new-price">$8.50</span><span class="old-price">19.00$</span></p>
+            <div class="dropdown-list" onclick="showOptions(3)">
+                <span class="choice" id="choice3">3</span>
+                <img src="img/arrow.png" alt="arrow" class="arrow">
+                <ul class="dropdown" id="dropdown3">
+                    <li id="option"></li>
+                </ul>
+            </div>
+            <a href="#" class="cart"></a>
+        </div>
+        <div class="product-card not-show-mobile" id="productCard4">
+            <h2>Apple</h2>
+            <img src="img/apple.png" alt="apple bottle" class="product-img">
+            <p class="description">Offerta limitata -50%</p>
+            <p class="price"><span class="new-price">$8.50</span><span class="old-price">19.00$</span></p>
+            <div class="dropdown-list" onclick="showOptions(4)">
+                <span class="choice" id="choice4">3</span>
+                <img src="img/arrow.png" alt="arrow" class="arrow">
+                <ul class="dropdown" id="dropdown4">
+                    <li></li>
+                </ul>
+            </div>
+            <a href="#" class="cart"></a>
+        </div>
+    </div>
+
+    <div class="mobile-menu">
+        <img src="img/dot-active.png" alt="dot active" class="dot" id="dotChoisen1"><img src="img/dot.png" alt="dot" class="dot-active" id="dotNotChoisen1" onclick="changeProduct(1)">
+        <img src="img/dot.png" alt="dot" class="dot" onclick="changeProduct(2)" id="dotNotChoisen2"><img src="img/dot-active.png" alt="dot active" class="dot-active" id="dotChoisen2">
+        <img src="img/dot.png" alt="dot" class="dot" onclick="changeProduct(3)" id="dotNotChoisen3"><img src="img/dot-active.png" alt="dot active" class="dot-active" id="dotChoisen3">
+        <img src="img/dot.png" alt="dot" class="dot" onclick="changeProduct(4)" id="dotNotChoisen4"><img src="img/dot-active.png" alt="dot active" class="dot-active" id="dotChoisen4">
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
